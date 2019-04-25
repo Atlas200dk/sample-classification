@@ -35,13 +35,23 @@
 
 script_path="$( cd "$(dirname "$0")" ; pwd -P )"
 
+download_mode=$1
 opencv_version="3.4.2"
 
 function download_code()
 {
     if [ -d ${script_path}/opencv ];then
-        echo "opencv code have been downloaded, skip download work..."
+        echo "opencv code is found..."
         return 0
+    else
+        if [[ ${download_mode} == "local" ]];then
+            echo "WARNING: no ffmpeg code found."
+            read -p "Do you want to download from internet?(y/n, default:y)" confirm
+            if [[ ${confirm}"X" != "X" && ${confirm} != "y" && ${confirm} != "Y" ]];then
+                echo "ERROR: no opencv code found and no download choice, please put opencv code in ${script_path}/opencv path manually."
+                return 1
+            fi
+        fi
     fi
     echo "Downloading opencv code..."
     opencv_download_url="https://codeload.github.com/opencv/opencv/tar.gz/${opencv_version}"
