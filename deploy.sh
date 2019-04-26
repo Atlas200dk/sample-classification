@@ -90,7 +90,7 @@ function deploy_cvverify()
 
     if [[ ${atlas_target} == "ASIC" ]];then
         echo "[Step] Deploy third party libs..."
-        upload_tar_file "${script_path}/opencv_lib.tar" "~/HIAI_PROJECTS/ascend_lib"
+        upload_tar_file "${script_path}/script/opencv_lib.tar" "~/HIAI_PROJECTS/ascend_lib"
     fi
     #deploy app
     if [ -d ${script_path}/classification/out ];then
