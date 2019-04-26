@@ -257,7 +257,6 @@ HIAI_IMPL_ENGINE_PROCESS("general_image",
     image_handle->console_params.model_height = console_param->model_height;
     image_handle->console_params.model_width = console_param->model_width;
     image_handle->console_params.output_nums = console_param->output_nums;
-    image_handle->console_params.output_path = console_param->output_path;
     if (!SendToEngine(image_handle)) {
       ERROR_LOG("Failed to deal file=%s. Reason: send data failed.",
                 path.c_str());

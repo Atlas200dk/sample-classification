@@ -42,71 +42,6 @@
 #define INPUT_SIZE 1
 #define OUTPUT_SIZE 1
 
-#ifdef FASTER_RCNN
-template <class T>
-class Tensor {
-  public:
-    Tensor() : data_(nullptr) {}
-    ~Tensor() { Clear(); }
-
-    uint32_t Size() const {
-      uint32_t size(1);
-      for(auto& dim : dims_){
-        size *= dim;
-      }
-      return size;
-    }
-
-    bool FromArray(const T* pdata, const std::vector<uint32_t>& shape){
-      if(pdata == nullptr){
-        return false;
-      }
-      Clear();
-      uint32_t size(1);
-      for(auto dim:shape){
-        if(dim>0){
-          size *= dim;
-        }else{
-          return false;
-        }
-      }
-      data_ = new T[size];
-      int ret = memcpy_s(data_, size * sizeof(T), pdata, size * sizeof(T));
-      if(ret !=0){
-        return false;
-      }
-      dims_ = shape;
-      return true;
-    }
-
-    T& operator()(uint32_t i, ...) { 
-      va_list arg_ptr;
-      va_start(arg_ptr, i);
-      uint32_t index = i;
-      for (uint32_t idx = 1; idx < dims_.size();++idx){
-        index *= dims_[idx];
-        index += va_arg(arg_ptr, uint32_t);
-      }
-      va_end(arg_ptr);
-      return data_[index];
-    }
-
-    T& operator[](unsigned int index) { return data_[index]; }
-    const T& operator[](unsigned int index) const { return data_[index]; }
-
-  private:
-    void Clear(){
-      if(data_ != nullptr){
-        delete[] data_;
-        data_ = nullptr;
-      }
-      dims_.clear();
-    }
-    std::vector<uint32_t> dims_; // tensor shape
-    T* data_; //tensor data
-};
-#endif
-
 /**
  * @brief: inference engine class
  */
@@ -136,7 +71,6 @@ private:
    */
   bool SendSentinel();
 
-#ifndef FASTER_RCNN
   /**
    * @brief: send result
    * @param [in]: result: engine transform image
@@ -144,17 +78,6 @@ private:
    */
   HIAI_StatusT ClassficationPostProcess(
       const std::shared_ptr<EngineTrans> &result);
-
-#else
-  /**
-   * @brief: mark the oject based on detection result
-   * @param [in]: result: engine transform image
-   * @return: HIAI_StatusT
-   */
-  HIAI_StatusT FasterRcnnPostProcess(
-      const std::shared_ptr<EngineTrans> &result);
-#endif
-
 };
 
 #endif /* GENERAL_POST_GENERAL_POST_H_ */

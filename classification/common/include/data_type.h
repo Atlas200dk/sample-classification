@@ -47,11 +47,7 @@ struct ConsoleParams {
   uint32_t model_height = 0;
   // input image path
   std::string input_path = "";
-  // result output path
-  std::string output_path = "";
-  // output result count
-  // for classification: means top-N
-  // for faster-RCNN: means output numbers
+  // output result count: means top-N
   uint32_t output_nums = 0;
 };
 
@@ -60,8 +56,7 @@ struct ConsoleParams {
  */
 template<class Archive>
 void serialize(Archive& ar, ConsoleParams& data) {
-  ar(data.model_width, data.model_height, data.input_path, data.output_path,
-     data.output_nums);
+  ar(data.model_width, data.model_height, data.input_path, data.output_nums);
 }
 
 /**
