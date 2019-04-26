@@ -62,8 +62,7 @@ const string kGraphConfigFilePath = "./graph.config";
 const int32_t kModelWidthPos = 1;
 const int32_t kModelHeightPos = 2;
 const int32_t kImagePathPos = 3;
-const int32_t kOutputPathPos = 4;
-const int32_t kOutputNumsPos = 5;
+const int32_t kOutputNumsPos = 4;
 
 // sleep interval for every image (unit: microseconds)
 const __useconds_t kSleepInterval = 100000;
@@ -93,7 +92,6 @@ void SetConsoleParams(char *argv[], shared_ptr<ConsoleParams> param_ptr) {
   param_ptr->model_width = atoi(argv[kModelWidthPos]);
   param_ptr->model_height = atoi(argv[kModelHeightPos]);
   param_ptr->input_path = string(argv[kImagePathPos]);
-  param_ptr->output_path = string(argv[kOutputPathPos]);
   param_ptr->output_nums = atoi(argv[kOutputNumsPos]);
 }
 

@@ -38,8 +38,6 @@ script_path="$( cd "$(dirname "$0")" ; pwd -P )"
 remote_host=$1
 download_mode=$2
 
-app_type="classification"
-
 . ${script_path}/script/func_deploy.sh
 . ${script_path}/script/func_util.sh
 # ******************************************************************************

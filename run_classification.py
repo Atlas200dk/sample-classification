@@ -41,8 +41,8 @@ MODEL_PATH = '${MODEL_PATH}'
 GRAPH_TEMPLATE_FILE = 'graph.template'
 GRAPH_CONFIG_FILE = 'graph.config'
 
-CPP_EXE = './ascend_cvnetworkverify'
-CONCOLE_LIST = ' {} {} {} {} {}'
+CPP_EXE = './ascend_classification'
+CONCOLE_LIST = ' {} {} {} {}'
 
 
 def get_args():
@@ -114,8 +114,7 @@ def assemble_console_params(args):
     """
     image_path = ','.join(args.input_path)
     console_params = CONCOLE_LIST.format(args.model_width, args.model_height,
-                                         image_path, "empty",
-                                         args.top_n)
+                                         image_path, args.top_n)
     return console_params
 
 
