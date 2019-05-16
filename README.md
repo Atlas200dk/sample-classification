@@ -1,3 +1,5 @@
+EN|[CN](README_cn.md)
+
 The classification network connectivity application runs on the Atlas 200 DK or the AI acceleration cloud server and implements the inference function by using a common classification network, and the first  _n_  inference results are output.
 
 ## Prerequisites<a name="en-us_topic_0167438951_section412314183119"></a>
