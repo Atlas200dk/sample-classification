@@ -97,7 +97,7 @@
 
     通用分类网络应用中使用的模型是经过转化后的适配Ascend 310芯片的模型，适配Ascend 310的模型的下载及原始网络模型的下载可参考[网络模型及公共代码库下载](#zh-cn_topic_0167414508_section92241245122511)。如果您有更好的模型，欢迎上传到[https://github.com/Ascend/models](https://github.com/Ascend/models)进行分享。
 
-    将模型文件（.om文件）下载到“sample-classification/script“目录下。
+    将模型文件（.om文件）上传到Host侧。
 
     **表 1**  通用分类网络应用使用模型
 

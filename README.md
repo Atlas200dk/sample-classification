@@ -99,7 +99,7 @@ Before running the application, obtain the source code package and configure the
 
     The models used in the application are converted models that adapt to the Ascend 310 chipset. For details about how to download this kind of models and the original network models, see  [Table 1](#en-us_topic_0167438951_table0531392153). If you have a better model solution, you are welcome to share it at  [https://github.com/Ascend/models](https://github.com/Ascend/models).
 
-    Download the network model files (.om files) to the **sample-classification/script** directory.
+    Upload the network model files (.om files) to the Host.
 
     **Table  1**  Models used in Classification Network Connectivity
 
