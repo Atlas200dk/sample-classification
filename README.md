@@ -15,7 +15,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  Obtain the source code package.
 
-    Download all the code in the sample-facedetection repository at  [https://github.com/Ascend/sample-classification](https://github.com/Ascend/sample-classification)  to any directory on Ubuntu Server where Mind Studio is located as the Mind Studio installation user, for example,  _/home/ascend/sample-classification_.
+    Download all the code in the sample-classification repository at  [https://github.com/Ascend/sample-classification](https://github.com/Ascend/sample-classification)  to any directory on Ubuntu Server where Mind Studio is located as the Mind Studio installation user, for example,  _/home/ascend/sample-classification_.
 
 2.  Log in to Ubuntu Server where Mind Studio is located as the Mind Studio installation user and set the environment variable  **DDK\_HOME**.
 
@@ -40,7 +40,7 @@ Before running the application, obtain the source code package and configure the
 
 ## Deployment<a name="en-us_topic_0167438951_section1823144520529"></a>
 
-1.  Access the root directory where the cvnetworkverify application code is located as the Mind Studio installation user, for example,  _**/home/ascend/sample-classification**_.
+1.  Access the root directory where the classification application code is located as the Mind Studio installation user, for example,  _**/home/ascend/sample-classification**_.
 2.  Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library and application.
 
     bash deploy.sh  _host\_ip_ _model\_mode_
