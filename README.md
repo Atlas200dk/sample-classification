@@ -6,8 +6,8 @@ The classification network connectivity application runs on the Atlas 200 DK or 
 
 Before using an open source application, ensure that:
 
--   Mind Studio has been installed. For details, see  [Mind Studio Installation Guide](https://www.huawei.com/minisite/ascend/en/filedetail_1.html).
--   The Atlas 200 DK developer board has been connected to Mind Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. For details, see  [Atlas 200 DK User Guide](https://www.huawei.com/minisite/ascend/en/filedetail_2.html).
+-   MindSpore Studio has been installed. For details, see  [MindSpore Studio Installation Guide](https://www.huawei.com/minisite/ascend/en/filedetail_1.html).
+-   The Atlas 200 DK developer board has been connected to MindSpore Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. For details, see  [Atlas 200 DK User Guide](https://www.huawei.com/minisite/ascend/en/filedetail_2.html).
 
 ## Software Preparation<a name="en-us_topic_0167438951_section126492814528"></a>
 
@@ -15,9 +15,9 @@ Before running the application, obtain the source code package and configure the
 
 1.  Obtain the source code package.
 
-    Download all the code in the sample-classification repository at  [https://github.com/Ascend/sample-classification](https://github.com/Ascend/sample-classification)  to any directory on Ubuntu Server where Mind Studio is located as the Mind Studio installation user, for example,  _/home/ascend/sample-classification_.
+    Download all the code in the sample-classification repository at  [https://github.com/Ascend/sample-classification](https://github.com/Ascend/sample-classification)  to any directory on Ubuntu Server where MindSpore Studio is located as the MindSpore Studio installation user, for example,  _/home/ascend/sample-classification_.
 
-2.  Log in to Ubuntu Server where Mind Studio is located as the Mind Studio installation user and set the environment variable  **DDK\_HOME**.
+2.  Log in to Ubuntu Server where MindSpore Studio is located as the MindSpore Studio installation user and set the environment variable  **DDK\_HOME**.
 
     **vim \~/.bashrc**
 
@@ -28,7 +28,7 @@ Before running the application, obtain the source code package and configure the
     **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
     >![](doc/source/img/icon-note.gif) **NOTE:**   
-    >-   **XXX**  indicates the Mind Studio installation user, and  **/home/XXX/tools**  indicates the default installation path of the DDK.  
+    >-   **XXX**  indicates the MindSpore Studio installation user, and  **/home/XXX/tools**  indicates the default installation path of the DDK.  
     >-   If the environment variables have been added, skip this step.  
 
     Enter  **:wq!**  to save and exit.
@@ -40,15 +40,15 @@ Before running the application, obtain the source code package and configure the
 
 ## Deployment<a name="en-us_topic_0167438951_section1823144520529"></a>
 
-1.  Access the root directory where the classification application code is located as the Mind Studio installation user, for example,  _**/home/ascend/sample-classification**_.
+1.  Access the root directory where the classification application code is located as the MindSpore Studio installation user, for example,  _**/home/ascend/sample-classification**_.
 2.  Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library and application.
 
     bash deploy.sh  _host\_ip_ _model\_mode_
 
     -   _host\_ip_: For the Atlas 200 DK developer board, this parameter indicates the IP address of the developer board.For the AI acceleration cloud server, this parameter indicates the IP address of the host.
     -   _model\_mode_  indicates the deployment mode of the model file. The default setting is  **internet**.
-        -   **local**: If the Ubuntu system where Mind Studio is located is not connected to the network, use the local mode. In this case, download the dependent common code library ezdvpp to the  **sample-classification/script**  directory by referring to the  [Downloading Network Models and and Dependency Code Library](#en-us_topic_0167438951_section13446115712539).
-        -   **internet**: Indicates the online deployment mode. If the Ubuntu system where Mind Studio is located is connected to the network, use the Internet mode. In this case, download the dependency code library ezdvpp online.
+        -   **local**: If the Ubuntu system where MindSpore Studio is located is not connected to the network, use the local mode. In this case, download the dependent common code library ezdvpp to the  **sample-classification/script**  directory by referring to the  [Downloading Network Models and and Dependency Code Library](#en-us_topic_0167438951_section13446115712539).
+        -   **internet**: Indicates the online deployment mode. If the Ubuntu system where MindSpore Studio is located is connected to the network, use the Internet mode. In this case, download the dependency code library ezdvpp online.
 
 
     Example command:
@@ -62,13 +62,13 @@ Before running the application, obtain the source code package and configure the
 
 ## Running<a name="en-us_topic_0167438951_section1665916172539"></a>
 
-1.  Log in to the Host as the  **HwHiAiUser**  user in SSH mode on Ubuntu Server where Mind Studio is located.
+1.  Log in to the Host as the  **HwHiAiUser**  user in SSH mode on Ubuntu Server where MindSpore Studio is located.
 
     **ssh HwHiAiUser@**_host\_ip_
 
     For the Atlas 200 DK, the default value of  _**host\_ip**_  is  **192.168.1.2**  \(USB connection mode\) or  **192.168.0.2**  \(NIC connection mode\).
 
-    For the AI acceleration cloud server,  _**host\_ip**_  indicates the IP address of the server where Mind Studio is located.
+    For the AI acceleration cloud server,  _**host\_ip**_  indicates the IP address of the server where MindSpore Studio is located.
 
 2.  Go to the path of the executable file of network connectivity.
 

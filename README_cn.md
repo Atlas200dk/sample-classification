@@ -6,8 +6,8 @@
 
 部署此Sample前，需要准备好以下环境：
 
--   已完成MindStudio的安装，详细请参考[Mind Studio安装指南](https://www.huawei.com/minisite/ascend/cn/filedetail_1.html)。
--   已完成Atlas 200 DK开发者板与Mind Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等，详细请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)。
+-   已完成MindSpore Studio的安装，详细请参考[MindSpore Studio安装指南](https://www.huawei.com/minisite/ascend/cn/filedetail_1.html)。
+-   已完成Atlas 200 DK开发者板与MindSpore Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等，详细请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)。
 
 ## 软件准备<a name="zh-cn_topic_0167414508_section181111827718"></a>
 
@@ -15,9 +15,9 @@
 
 1.  获取源码包。
 
-    将[https://github.com/Ascend/sample-classification](https://github.com/Ascend/sample-classification)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：_/home/ascend/sample-classification_。
+    将[https://github.com/Ascend/sample-classification](https://github.com/Ascend/sample-classification)仓中的代码以MindSpore Studio安装用户下载至MindSpore Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：_/home/ascend/sample-classification_。
 
-2.  以Mind Studio安装用户登录Mind Studio所在Ubuntu服务器，并设置环境变量DDK\_HOME。
+2.  以MindSpore Studio安装用户登录MindSpore Studio所在Ubuntu服务器，并设置环境变量DDK\_HOME。
 
     **vim \~/.bashrc**
 
@@ -28,7 +28,7 @@
     **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
     >![](doc/source/img/icon-note.gif) **说明：**   
-    >-   XXX为Mind Studio安装用户，/home/XXX/tools为DDK默认安装路径。  
+    >-   XXX为MindSpore Studio安装用户，/home/XXX/tools为DDK默认安装路径。  
     >-   如果此环境变量已经添加，则此步骤可跳过。  
 
     输入:wq!保存退出。
@@ -40,14 +40,14 @@
 
 ## 部署<a name="zh-cn_topic_0167414508_section18931344873"></a>
 
-1.  以Mind Studio安装用户进入通用分类网络应用代码所在根目录，如 _/home/ascend/sample-classification_。
+1.  以MindSpore Studio安装用户进入通用分类网络应用代码所在根目录，如 _/home/ascend/sample-classification_。
 2.  执行部署脚本，进行工程环境准备，包括公共库的编译与部署、应用的编译与部署等操作。
 
     bash deploy.sh  _host\_ip_ _model\_mode_
 
     -   _host\_ip_：对于Atlas 200 DK开发者板，即为开发者板的IP地址。对于AI加速云服务器，即为Host的IP地址。
-    -   local：若Mind Studio所在Ubuntu系统未连接网络，请使用local模式，执行此命令前，需要参考[网络模型及公共代码库下载](#zh-cn_topic_0167414508_section92241245122511)将依赖的公共代码库ezdvpp下载到“sample-classification/script“目录下。
-    -   internet：若Mind Studio所在Ubuntu系统已连接网络，请使用internet模式，在线下载依赖代码库ezdvpp。
+    -   local：若MindSpore Studio所在Ubuntu系统未连接网络，请使用local模式，执行此命令前，需要参考[网络模型及公共代码库下载](#zh-cn_topic_0167414508_section92241245122511)将依赖的公共代码库ezdvpp下载到“sample-classification/script“目录下。
+    -   internet：若MindSpore Studio所在Ubuntu系统已连接网络，请使用internet模式，在线下载依赖代码库ezdvpp。
 
     命令示例：
 
@@ -60,13 +60,13 @@
 
 ## 运行<a name="zh-cn_topic_0167414508_section372782554919"></a>
 
-1.  在Mind Studio所在Ubuntu服务器中，以HwHiAiUser用户SSH登录到Host侧。
+1.  在MindSpore Studio所在Ubuntu服务器中，以HwHiAiUser用户SSH登录到Host侧。
 
     **ssh HwHiAiUser@**_host\_ip_
 
     对于Atlas 200 DK，host\_ip默认为192.168.1.2（USB连接）或者192.168.0.2（NIC连接）。
 
-    对于AI加速云服务器，host\_ip即为当前Mind Studio所在服务器的IP地址。
+    对于AI加速云服务器，host\_ip即为当前MindSpore Studio所在服务器的IP地址。
 
 2.  进入贯通网络的可执行文件所在路径。
 
