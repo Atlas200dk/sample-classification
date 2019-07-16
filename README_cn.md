@@ -84,7 +84,7 @@
 
     命令示例如下所示：
 
-    **python3 run\_classification.py  -m  _\~/models/vgg16.om_  -w  _224_  -h  _224_  -i**
+    **python3 run\_classification.py  -m  _\~/models/alexnet.om_  -w  _224_  -h  _224_  -i**
 
     **_./example.jpg_  -n  _10_**
 
