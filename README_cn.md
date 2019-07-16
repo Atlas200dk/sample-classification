@@ -56,6 +56,12 @@
 3.  参考[网络模型及公共代码库下载](#zh-cn_topic_0167414508_section92241245122511)将需要使用的离线模型文件与需要推理的图片上传至Host侧任一属组为HwHiAiUser用户的目录。
 
     例如将模型文件**alexnet.om**上传到Host侧的“/home/HwHiAiUser/models“目录下。
+    
+    图片要求如下:
+
+    - 格式：jpg、png、bmp。
+    - 输入图片宽度：16px~4096px之间的整数。
+    - 输入图片高度：16px~4096px之间的整数。
 
 
 ## 运行<a name="zh-cn_topic_0167414508_section372782554919"></a>
@@ -114,7 +120,7 @@
     </thead>
     <tbody><tr id="zh-cn_topic_0167414508_row46451053974"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p38016264814"><a name="zh-cn_topic_0167414508_p38016264814"></a><a name="zh-cn_topic_0167414508_p38016264814"></a>图片分类推理模型（alexnet.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p8803267811"><a name="zh-cn_topic_0167414508_p8803267811"></a><a name="zh-cn_topic_0167414508_p8803267811"></a>此模型为<strong id="zh-cn_topic_0167414508_b112506266916"><a name="zh-cn_topic_0167414508_b112506266916"></a><a name="zh-cn_topic_0167414508_b112506266916"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p8803267811"><a name="zh-cn_topic_0167414508_p8803267811"></a><a name="zh-cn_topic_0167414508_p8803267811"></a>此模型为<strong id="zh-cn_topic_0167414508_b112506266916"><a name="zh-cn_topic_0167414508_b112506266916"></a><a name="zh-cn_topic_0167414508_b112506266916"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p4801260818"><a name="zh-cn_topic_0167414508_p4801260818"></a><a name="zh-cn_topic_0167414508_p4801260818"></a>是基于Caffe的AlexNet模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p128072618818"><a name="zh-cn_topic_0167414508_p128072618818"></a><a name="zh-cn_topic_0167414508_p128072618818"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/alexnet目录中下载。</p>
@@ -122,12 +128,12 @@
     </td>
     <td class="cellrowborder" valign="top" width="18.490000000000002%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0167414508_p128132612819"><a name="zh-cn_topic_0167414508_p128132612819"></a><a name="zh-cn_topic_0167414508_p128132612819"></a>请参考<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/alexnet目录下的<span>README.md</span>文件获取。</p>
     <p id="zh-cn_topic_0167414508_p984534518555"><a name="zh-cn_topic_0167414508_p984534518555"></a><a name="zh-cn_topic_0167414508_p984534518555"></a><strong id="zh-cn_topic_0167414508_b17845645125512"><a name="zh-cn_topic_0167414508_b17845645125512"></a><a name="zh-cn_topic_0167414508_b17845645125512"></a>模型转换时注意事项：</strong></p>
-    <p id="zh-cn_topic_0167414508_p1845174516559"><a name="zh-cn_topic_0167414508_p1845174516559"></a><a name="zh-cn_topic_0167414508_p1845174516559"></a>网络贯通应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
+    <p id="zh-cn_topic_0167414508_p1845174516559"><a name="zh-cn_topic_0167414508_p1845174516559"></a><a name="zh-cn_topic_0167414508_p1845174516559"></a>通用分类网络应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0167414508_row159579101382"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p14875119101115"><a name="zh-cn_topic_0167414508_p14875119101115"></a><a name="zh-cn_topic_0167414508_p14875119101115"></a>图片分类推理模型（caffenet.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1587571914115"><a name="zh-cn_topic_0167414508_p1587571914115"></a><a name="zh-cn_topic_0167414508_p1587571914115"></a>此模型为<strong id="zh-cn_topic_0167414508_b15875191991111"><a name="zh-cn_topic_0167414508_b15875191991111"></a><a name="zh-cn_topic_0167414508_b15875191991111"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1587571914115"><a name="zh-cn_topic_0167414508_p1587571914115"></a><a name="zh-cn_topic_0167414508_p1587571914115"></a>此模型为<strong id="zh-cn_topic_0167414508_b15875191991111"><a name="zh-cn_topic_0167414508_b15875191991111"></a><a name="zh-cn_topic_0167414508_b15875191991111"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p1387581911113"><a name="zh-cn_topic_0167414508_p1387581911113"></a><a name="zh-cn_topic_0167414508_p1387581911113"></a>是基于Caffe的CaffeNet模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p12875719161117"><a name="zh-cn_topic_0167414508_p12875719161117"></a><a name="zh-cn_topic_0167414508_p12875719161117"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/caffenet目录中下载。</p>
@@ -135,12 +141,12 @@
     </td>
     <td class="cellrowborder" valign="top" width="18.490000000000002%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0167414508_p38752019131114"><a name="zh-cn_topic_0167414508_p38752019131114"></a><a name="zh-cn_topic_0167414508_p38752019131114"></a>请参考<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/caffenet目录下的<span>README.md</span>文件获取。</p>
     <p id="zh-cn_topic_0167414508_p6542847111116"><a name="zh-cn_topic_0167414508_p6542847111116"></a><a name="zh-cn_topic_0167414508_p6542847111116"></a><strong id="zh-cn_topic_0167414508_b185428475110"><a name="zh-cn_topic_0167414508_b185428475110"></a><a name="zh-cn_topic_0167414508_b185428475110"></a>模型转换时注意事项：</strong></p>
-    <p id="zh-cn_topic_0167414508_p554264715117"><a name="zh-cn_topic_0167414508_p554264715117"></a><a name="zh-cn_topic_0167414508_p554264715117"></a>网络贯通应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
+    <p id="zh-cn_topic_0167414508_p554264715117"><a name="zh-cn_topic_0167414508_p554264715117"></a><a name="zh-cn_topic_0167414508_p554264715117"></a>通用分类网络应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0167414508_row316892191110"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p2992152117116"><a name="zh-cn_topic_0167414508_p2992152117116"></a><a name="zh-cn_topic_0167414508_p2992152117116"></a>图片分类推理模型（densenet.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p119923212112"><a name="zh-cn_topic_0167414508_p119923212112"></a><a name="zh-cn_topic_0167414508_p119923212112"></a>此模型为<strong id="zh-cn_topic_0167414508_b13992162131110"><a name="zh-cn_topic_0167414508_b13992162131110"></a><a name="zh-cn_topic_0167414508_b13992162131110"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p119923212112"><a name="zh-cn_topic_0167414508_p119923212112"></a><a name="zh-cn_topic_0167414508_p119923212112"></a>此模型为<strong id="zh-cn_topic_0167414508_b13992162131110"><a name="zh-cn_topic_0167414508_b13992162131110"></a><a name="zh-cn_topic_0167414508_b13992162131110"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p099252118116"><a name="zh-cn_topic_0167414508_p099252118116"></a><a name="zh-cn_topic_0167414508_p099252118116"></a>是基于Caffe的DenseNet121模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p159929213117"><a name="zh-cn_topic_0167414508_p159929213117"></a><a name="zh-cn_topic_0167414508_p159929213117"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/densenet目录中下载。</p>
@@ -151,7 +157,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row13785115171113"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p620742415114"><a name="zh-cn_topic_0167414508_p620742415114"></a><a name="zh-cn_topic_0167414508_p620742415114"></a>图片分类推理模型（googlenet.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p13207224191114"><a name="zh-cn_topic_0167414508_p13207224191114"></a><a name="zh-cn_topic_0167414508_p13207224191114"></a>此模型为<strong id="zh-cn_topic_0167414508_b6207122410118"><a name="zh-cn_topic_0167414508_b6207122410118"></a><a name="zh-cn_topic_0167414508_b6207122410118"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p13207224191114"><a name="zh-cn_topic_0167414508_p13207224191114"></a><a name="zh-cn_topic_0167414508_p13207224191114"></a>此模型为<strong id="zh-cn_topic_0167414508_b6207122410118"><a name="zh-cn_topic_0167414508_b6207122410118"></a><a name="zh-cn_topic_0167414508_b6207122410118"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p1920712243116"><a name="zh-cn_topic_0167414508_p1920712243116"></a><a name="zh-cn_topic_0167414508_p1920712243116"></a>是基于Caffe的GoogLeNet模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p1720718241119"><a name="zh-cn_topic_0167414508_p1720718241119"></a><a name="zh-cn_topic_0167414508_p1720718241119"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/googlenet目录中下载。</p>
@@ -159,12 +165,12 @@
     </td>
     <td class="cellrowborder" valign="top" width="18.490000000000002%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0167414508_p220712242115"><a name="zh-cn_topic_0167414508_p220712242115"></a><a name="zh-cn_topic_0167414508_p220712242115"></a>请参考<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/googlenet目录下的<span>README.md</span>文件获取。</p>
     <p id="zh-cn_topic_0167414508_p1263175510116"><a name="zh-cn_topic_0167414508_p1263175510116"></a><a name="zh-cn_topic_0167414508_p1263175510116"></a><strong id="zh-cn_topic_0167414508_b156317556118"><a name="zh-cn_topic_0167414508_b156317556118"></a><a name="zh-cn_topic_0167414508_b156317556118"></a>模型转换时注意事项：</strong></p>
-    <p id="zh-cn_topic_0167414508_p16313556115"><a name="zh-cn_topic_0167414508_p16313556115"></a><a name="zh-cn_topic_0167414508_p16313556115"></a>网络贯通应用一次处理一张图片，所以转换时需要将Input Shaple的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
+    <p id="zh-cn_topic_0167414508_p16313556115"><a name="zh-cn_topic_0167414508_p16313556115"></a><a name="zh-cn_topic_0167414508_p16313556115"></a>通用分类网络应用一次处理一张图片，所以转换时需要将Input Shaple的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0167414508_row8741916780"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p1856219253111"><a name="zh-cn_topic_0167414508_p1856219253111"></a><a name="zh-cn_topic_0167414508_p1856219253111"></a>图片分类推理模型（<span>inception_v2</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p3562182517117"><a name="zh-cn_topic_0167414508_p3562182517117"></a><a name="zh-cn_topic_0167414508_p3562182517117"></a>此模型为<strong id="zh-cn_topic_0167414508_b35627252115"><a name="zh-cn_topic_0167414508_b35627252115"></a><a name="zh-cn_topic_0167414508_b35627252115"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p3562182517117"><a name="zh-cn_topic_0167414508_p3562182517117"></a><a name="zh-cn_topic_0167414508_p3562182517117"></a>此模型为<strong id="zh-cn_topic_0167414508_b35627252115"><a name="zh-cn_topic_0167414508_b35627252115"></a><a name="zh-cn_topic_0167414508_b35627252115"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p10562132551115"><a name="zh-cn_topic_0167414508_p10562132551115"></a><a name="zh-cn_topic_0167414508_p10562132551115"></a>是基于Caffe的Inception V2模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p1256262501114"><a name="zh-cn_topic_0167414508_p1256262501114"></a><a name="zh-cn_topic_0167414508_p1256262501114"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>inception_v2</span>目录中下载。</p>
@@ -172,12 +178,12 @@
     </td>
     <td class="cellrowborder" valign="top" width="18.490000000000002%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0167414508_p5562112531118"><a name="zh-cn_topic_0167414508_p5562112531118"></a><a name="zh-cn_topic_0167414508_p5562112531118"></a>请参考<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>inception_v2</span>目录下的<span>README.md</span>文件获取。</p>
     <p id="zh-cn_topic_0167414508_p12485515123"><a name="zh-cn_topic_0167414508_p12485515123"></a><a name="zh-cn_topic_0167414508_p12485515123"></a><strong id="zh-cn_topic_0167414508_b154858118128"><a name="zh-cn_topic_0167414508_b154858118128"></a><a name="zh-cn_topic_0167414508_b154858118128"></a>模型转换时注意事项：</strong></p>
-    <p id="zh-cn_topic_0167414508_p048511131217"><a name="zh-cn_topic_0167414508_p048511131217"></a><a name="zh-cn_topic_0167414508_p048511131217"></a>网络贯通应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
+    <p id="zh-cn_topic_0167414508_p048511131217"><a name="zh-cn_topic_0167414508_p048511131217"></a><a name="zh-cn_topic_0167414508_p048511131217"></a>通用分类网络应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0167414508_row9866134420103"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p1139610271116"><a name="zh-cn_topic_0167414508_p1139610271116"></a><a name="zh-cn_topic_0167414508_p1139610271116"></a>图片分类推理模型（<span>inception_v3</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p9396192751112"><a name="zh-cn_topic_0167414508_p9396192751112"></a><a name="zh-cn_topic_0167414508_p9396192751112"></a>此模型为<strong id="zh-cn_topic_0167414508_b3396527171110"><a name="zh-cn_topic_0167414508_b3396527171110"></a><a name="zh-cn_topic_0167414508_b3396527171110"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p9396192751112"><a name="zh-cn_topic_0167414508_p9396192751112"></a><a name="zh-cn_topic_0167414508_p9396192751112"></a>此模型为<strong id="zh-cn_topic_0167414508_b3396527171110"><a name="zh-cn_topic_0167414508_b3396527171110"></a><a name="zh-cn_topic_0167414508_b3396527171110"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p11397192711117"><a name="zh-cn_topic_0167414508_p11397192711117"></a><a name="zh-cn_topic_0167414508_p11397192711117"></a>是基于Caffe的Inception V3模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p939792718117"><a name="zh-cn_topic_0167414508_p939792718117"></a><a name="zh-cn_topic_0167414508_p939792718117"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>inception_v3</span>目录中下载。</p>
@@ -188,7 +194,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row17465348111014"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p106251329111119"><a name="zh-cn_topic_0167414508_p106251329111119"></a><a name="zh-cn_topic_0167414508_p106251329111119"></a>图片分类推理模型（<span>inception_v4</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1262512901114"><a name="zh-cn_topic_0167414508_p1262512901114"></a><a name="zh-cn_topic_0167414508_p1262512901114"></a>此模型为<strong id="zh-cn_topic_0167414508_b66258292114"><a name="zh-cn_topic_0167414508_b66258292114"></a><a name="zh-cn_topic_0167414508_b66258292114"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1262512901114"><a name="zh-cn_topic_0167414508_p1262512901114"></a><a name="zh-cn_topic_0167414508_p1262512901114"></a>此模型为<strong id="zh-cn_topic_0167414508_b66258292114"><a name="zh-cn_topic_0167414508_b66258292114"></a><a name="zh-cn_topic_0167414508_b66258292114"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p56252291113"><a name="zh-cn_topic_0167414508_p56252291113"></a><a name="zh-cn_topic_0167414508_p56252291113"></a>是基于Caffe的Inception V4模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p1262552951110"><a name="zh-cn_topic_0167414508_p1262552951110"></a><a name="zh-cn_topic_0167414508_p1262552951110"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>inception_v4</span>目录中下载。</p>
@@ -199,7 +205,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row979444613104"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p18346631111116"><a name="zh-cn_topic_0167414508_p18346631111116"></a><a name="zh-cn_topic_0167414508_p18346631111116"></a>图片分类推理模型（<span>mobilenet_v1</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p43461317114"><a name="zh-cn_topic_0167414508_p43461317114"></a><a name="zh-cn_topic_0167414508_p43461317114"></a>此模型为<strong id="zh-cn_topic_0167414508_b7346143114119"><a name="zh-cn_topic_0167414508_b7346143114119"></a><a name="zh-cn_topic_0167414508_b7346143114119"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p43461317114"><a name="zh-cn_topic_0167414508_p43461317114"></a><a name="zh-cn_topic_0167414508_p43461317114"></a>此模型为<strong id="zh-cn_topic_0167414508_b7346143114119"><a name="zh-cn_topic_0167414508_b7346143114119"></a><a name="zh-cn_topic_0167414508_b7346143114119"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p18346831181120"><a name="zh-cn_topic_0167414508_p18346831181120"></a><a name="zh-cn_topic_0167414508_p18346831181120"></a>是基于Caffe的MobileNet V1模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p3346113151116"><a name="zh-cn_topic_0167414508_p3346113151116"></a><a name="zh-cn_topic_0167414508_p3346113151116"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>mobilenet_v1</span>目录中下载。</p>
@@ -210,7 +216,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row689533810102"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p14326123381113"><a name="zh-cn_topic_0167414508_p14326123381113"></a><a name="zh-cn_topic_0167414508_p14326123381113"></a>图片分类推理模型（<span>mobilenet_v2</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p632643321113"><a name="zh-cn_topic_0167414508_p632643321113"></a><a name="zh-cn_topic_0167414508_p632643321113"></a>此模型为<strong id="zh-cn_topic_0167414508_b932643311118"><a name="zh-cn_topic_0167414508_b932643311118"></a><a name="zh-cn_topic_0167414508_b932643311118"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p632643321113"><a name="zh-cn_topic_0167414508_p632643321113"></a><a name="zh-cn_topic_0167414508_p632643321113"></a>此模型为<strong id="zh-cn_topic_0167414508_b932643311118"><a name="zh-cn_topic_0167414508_b932643311118"></a><a name="zh-cn_topic_0167414508_b932643311118"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p532623311119"><a name="zh-cn_topic_0167414508_p532623311119"></a><a name="zh-cn_topic_0167414508_p532623311119"></a>是基于Caffe的MobileNet V2模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p6326193381119"><a name="zh-cn_topic_0167414508_p6326193381119"></a><a name="zh-cn_topic_0167414508_p6326193381119"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>mobilenet_v2</span>目录中下载。</p>
@@ -221,7 +227,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row1814664317105"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p1827573513115"><a name="zh-cn_topic_0167414508_p1827573513115"></a><a name="zh-cn_topic_0167414508_p1827573513115"></a>图片分类推理模型（<span>resnet18</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p9275113591110"><a name="zh-cn_topic_0167414508_p9275113591110"></a><a name="zh-cn_topic_0167414508_p9275113591110"></a>此模型为<strong id="zh-cn_topic_0167414508_b162758353113"><a name="zh-cn_topic_0167414508_b162758353113"></a><a name="zh-cn_topic_0167414508_b162758353113"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p9275113591110"><a name="zh-cn_topic_0167414508_p9275113591110"></a><a name="zh-cn_topic_0167414508_p9275113591110"></a>此模型为<strong id="zh-cn_topic_0167414508_b162758353113"><a name="zh-cn_topic_0167414508_b162758353113"></a><a name="zh-cn_topic_0167414508_b162758353113"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p1227523513114"><a name="zh-cn_topic_0167414508_p1227523513114"></a><a name="zh-cn_topic_0167414508_p1227523513114"></a>是基于Caffe的ResNet 18模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p5275143510111"><a name="zh-cn_topic_0167414508_p5275143510111"></a><a name="zh-cn_topic_0167414508_p5275143510111"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>resnet18</span>目录中下载。</p>
@@ -232,7 +238,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row441394141015"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p6695133711118"><a name="zh-cn_topic_0167414508_p6695133711118"></a><a name="zh-cn_topic_0167414508_p6695133711118"></a>图片分类推理模型（<span>resnet50</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p5695163791110"><a name="zh-cn_topic_0167414508_p5695163791110"></a><a name="zh-cn_topic_0167414508_p5695163791110"></a>此模型为<strong id="zh-cn_topic_0167414508_b166953371114"><a name="zh-cn_topic_0167414508_b166953371114"></a><a name="zh-cn_topic_0167414508_b166953371114"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p5695163791110"><a name="zh-cn_topic_0167414508_p5695163791110"></a><a name="zh-cn_topic_0167414508_p5695163791110"></a>此模型为<strong id="zh-cn_topic_0167414508_b166953371114"><a name="zh-cn_topic_0167414508_b166953371114"></a><a name="zh-cn_topic_0167414508_b166953371114"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p66951937161112"><a name="zh-cn_topic_0167414508_p66951937161112"></a><a name="zh-cn_topic_0167414508_p66951937161112"></a>是基于Caffe的ResNet 50模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p18695183720114"><a name="zh-cn_topic_0167414508_p18695183720114"></a><a name="zh-cn_topic_0167414508_p18695183720114"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>resnet50</span>目录中下载。</p>
@@ -243,7 +249,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row37251614782"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p059819395113"><a name="zh-cn_topic_0167414508_p059819395113"></a><a name="zh-cn_topic_0167414508_p059819395113"></a>图片分类推理模型（<span>resnet101</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1598123971117"><a name="zh-cn_topic_0167414508_p1598123971117"></a><a name="zh-cn_topic_0167414508_p1598123971117"></a>此模型为<strong id="zh-cn_topic_0167414508_b959823915114"><a name="zh-cn_topic_0167414508_b959823915114"></a><a name="zh-cn_topic_0167414508_b959823915114"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1598123971117"><a name="zh-cn_topic_0167414508_p1598123971117"></a><a name="zh-cn_topic_0167414508_p1598123971117"></a>此模型为<strong id="zh-cn_topic_0167414508_b959823915114"><a name="zh-cn_topic_0167414508_b959823915114"></a><a name="zh-cn_topic_0167414508_b959823915114"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p9598113981116"><a name="zh-cn_topic_0167414508_p9598113981116"></a><a name="zh-cn_topic_0167414508_p9598113981116"></a>是基于Caffe的ResNet 101模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p1959811392112"><a name="zh-cn_topic_0167414508_p1959811392112"></a><a name="zh-cn_topic_0167414508_p1959811392112"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>resnet101</span>目录中下载。</p>
@@ -254,7 +260,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row3565755811"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p12320164191115"><a name="zh-cn_topic_0167414508_p12320164191115"></a><a name="zh-cn_topic_0167414508_p12320164191115"></a>图片分类推理模型（<span>resnet152</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p532054151113"><a name="zh-cn_topic_0167414508_p532054151113"></a><a name="zh-cn_topic_0167414508_p532054151113"></a>此模型为<strong id="zh-cn_topic_0167414508_b532017413119"><a name="zh-cn_topic_0167414508_b532017413119"></a><a name="zh-cn_topic_0167414508_b532017413119"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p532054151113"><a name="zh-cn_topic_0167414508_p532054151113"></a><a name="zh-cn_topic_0167414508_p532054151113"></a>此模型为<strong id="zh-cn_topic_0167414508_b532017413119"><a name="zh-cn_topic_0167414508_b532017413119"></a><a name="zh-cn_topic_0167414508_b532017413119"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p2320144171115"><a name="zh-cn_topic_0167414508_p2320144171115"></a><a name="zh-cn_topic_0167414508_p2320144171115"></a>是基于Caffe的ResNet 152模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p183201741111113"><a name="zh-cn_topic_0167414508_p183201741111113"></a><a name="zh-cn_topic_0167414508_p183201741111113"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>resnet152</span>目录中下载。</p>
@@ -265,7 +271,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row696519012818"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p422234301120"><a name="zh-cn_topic_0167414508_p422234301120"></a><a name="zh-cn_topic_0167414508_p422234301120"></a>图片分类推理模型（<span>vgg16</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1522374351117"><a name="zh-cn_topic_0167414508_p1522374351117"></a><a name="zh-cn_topic_0167414508_p1522374351117"></a>此模型为<strong id="zh-cn_topic_0167414508_b8223743121118"><a name="zh-cn_topic_0167414508_b8223743121118"></a><a name="zh-cn_topic_0167414508_b8223743121118"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p1522374351117"><a name="zh-cn_topic_0167414508_p1522374351117"></a><a name="zh-cn_topic_0167414508_p1522374351117"></a>此模型为<strong id="zh-cn_topic_0167414508_b8223743121118"><a name="zh-cn_topic_0167414508_b8223743121118"></a><a name="zh-cn_topic_0167414508_b8223743121118"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p16223184310112"><a name="zh-cn_topic_0167414508_p16223184310112"></a><a name="zh-cn_topic_0167414508_p16223184310112"></a>是基于Caffe的VGG16模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p5223184371117"><a name="zh-cn_topic_0167414508_p5223184371117"></a><a name="zh-cn_topic_0167414508_p5223184371117"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>vgg16</span>目录中下载。</p>
@@ -276,7 +282,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row6549133817"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p85381445201113"><a name="zh-cn_topic_0167414508_p85381445201113"></a><a name="zh-cn_topic_0167414508_p85381445201113"></a>图片分类推理模型（<span>vgg19</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p85381645121115"><a name="zh-cn_topic_0167414508_p85381645121115"></a><a name="zh-cn_topic_0167414508_p85381645121115"></a>此模型为<strong id="zh-cn_topic_0167414508_b953854518118"><a name="zh-cn_topic_0167414508_b953854518118"></a><a name="zh-cn_topic_0167414508_b953854518118"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p85381645121115"><a name="zh-cn_topic_0167414508_p85381645121115"></a><a name="zh-cn_topic_0167414508_p85381645121115"></a>此模型为<strong id="zh-cn_topic_0167414508_b953854518118"><a name="zh-cn_topic_0167414508_b953854518118"></a><a name="zh-cn_topic_0167414508_b953854518118"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p1753844514117"><a name="zh-cn_topic_0167414508_p1753844514117"></a><a name="zh-cn_topic_0167414508_p1753844514117"></a>是基于Caffe的VGG19模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p553813451112"><a name="zh-cn_topic_0167414508_p553813451112"></a><a name="zh-cn_topic_0167414508_p553813451112"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>vgg19</span>目录中下载。</p>
@@ -287,7 +293,7 @@
     </tr>
     <tr id="zh-cn_topic_0167414508_row33092581075"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p265315476115"><a name="zh-cn_topic_0167414508_p265315476115"></a><a name="zh-cn_topic_0167414508_p265315476115"></a>图片分类推理模型（<span>squeezenet</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p17653194714118"><a name="zh-cn_topic_0167414508_p17653194714118"></a><a name="zh-cn_topic_0167414508_p17653194714118"></a>此模型为<strong id="zh-cn_topic_0167414508_b4653194713111"><a name="zh-cn_topic_0167414508_b4653194713111"></a><a name="zh-cn_topic_0167414508_b4653194713111"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p17653194714118"><a name="zh-cn_topic_0167414508_p17653194714118"></a><a name="zh-cn_topic_0167414508_p17653194714118"></a>此模型为<strong id="zh-cn_topic_0167414508_b4653194713111"><a name="zh-cn_topic_0167414508_b4653194713111"></a><a name="zh-cn_topic_0167414508_b4653194713111"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p6653194718113"><a name="zh-cn_topic_0167414508_p6653194718113"></a><a name="zh-cn_topic_0167414508_p6653194718113"></a>是基于Caffe的<span>SqueezeNet</span>模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p3653184712114"><a name="zh-cn_topic_0167414508_p3653184712114"></a><a name="zh-cn_topic_0167414508_p3653184712114"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>squeezenet</span>目录中下载。</p>
@@ -295,12 +301,12 @@
     </td>
     <td class="cellrowborder" valign="top" width="18.490000000000002%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0167414508_p86531547121116"><a name="zh-cn_topic_0167414508_p86531547121116"></a><a name="zh-cn_topic_0167414508_p86531547121116"></a>请参考<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>squeezenet</span>目录下的<span>README.md</span>文件获取。</p>
     <p id="zh-cn_topic_0167414508_p169381419151217"><a name="zh-cn_topic_0167414508_p169381419151217"></a><a name="zh-cn_topic_0167414508_p169381419151217"></a><strong id="zh-cn_topic_0167414508_b1993851971218"><a name="zh-cn_topic_0167414508_b1993851971218"></a><a name="zh-cn_topic_0167414508_b1993851971218"></a>模型转换时注意事项：</strong></p>
-    <p id="zh-cn_topic_0167414508_p79387192124"><a name="zh-cn_topic_0167414508_p79387192124"></a><a name="zh-cn_topic_0167414508_p79387192124"></a>网络贯通应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
+    <p id="zh-cn_topic_0167414508_p79387192124"><a name="zh-cn_topic_0167414508_p79387192124"></a><a name="zh-cn_topic_0167414508_p79387192124"></a>通用分类网络应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1，如<a href="#zh-cn_topic_0167414508_fig20240124719920">图1</a>所示。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0167414508_row2011118432011"><td class="cellrowborder" valign="top" width="19.53%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0167414508_p8807195615216"><a name="zh-cn_topic_0167414508_p8807195615216"></a><a name="zh-cn_topic_0167414508_p8807195615216"></a>图片分类推理模型（<span>dpn98</span>.om）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p158071856152116"><a name="zh-cn_topic_0167414508_p158071856152116"></a><a name="zh-cn_topic_0167414508_p158071856152116"></a>此模型为<strong id="zh-cn_topic_0167414508_b1780714563211"><a name="zh-cn_topic_0167414508_b1780714563211"></a><a name="zh-cn_topic_0167414508_b1780714563211"></a>网络贯通</strong>应用中使用的模型。</p>
+    <td class="cellrowborder" valign="top" width="29.970000000000002%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0167414508_p158071856152116"><a name="zh-cn_topic_0167414508_p158071856152116"></a><a name="zh-cn_topic_0167414508_p158071856152116"></a>此模型为<strong id="zh-cn_topic_0167414508_b1780714563211"><a name="zh-cn_topic_0167414508_b1780714563211"></a><a name="zh-cn_topic_0167414508_b1780714563211"></a>通用分类网络</strong>应用中使用的模型。</p>
     <p id="zh-cn_topic_0167414508_p1580725614215"><a name="zh-cn_topic_0167414508_p1580725614215"></a><a name="zh-cn_topic_0167414508_p1580725614215"></a>是基于Caffe的<span>dpn98</span>模型。</p>
     </td>
     <td class="cellrowborder" valign="top" width="32.01%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0167414508_p10808195622117"><a name="zh-cn_topic_0167414508_p10808195622117"></a><a name="zh-cn_topic_0167414508_p10808195622117"></a>请从<a href="https://github.com/Ascend/models/" target="_blank" rel="noopener noreferrer">https://github.com/Ascend/models/</a>仓的computer_vision/classification/<span>dpn98</span>目录中下载。</p>
@@ -312,10 +318,10 @@
     </tbody>
     </table>
 
-    **图 1**  网络贯通模型转换配置参考<a name="zh-cn_topic_0167414508_fig20240124719920"></a>  
-    ![](doc/source/img/网络贯通模型转换配置参考.png "网络贯通模型转换配置参考")
+    **图 1**  通用分类网络模型转换配置参考<a name="zh-cn_topic_0167414508_fig20240124719920"></a>  
+    ![](doc/source/img/通用分类网络模型转换配置参考.png "通用分类网络模型转换配置参考")
 
-    由于网络贯通应用每次处理一张图片，所以需要将模型转换时的Batch修改为1。
+    由于通用分类网络应用每次处理一张图片，所以需要将模型转换时的Batch修改为1。
 
 -   依赖代码库下载
 
