@@ -6,8 +6,8 @@ The classification classification application runs on the Atlas 200 DK or the AI
 
 Before using an open source application, ensure that:
 
--   MindSpore Studio has been installed. For details, see  [MindSpore Studio Installation Guide](https://www.huawei.com/minisite/ascend/en/filedetail_1.html).
--   The Atlas 200 DK developer board has been connected to MindSpore Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. For details, see  [Atlas 200 DK User Guide](https://www.huawei.com/minisite/ascend/en/filedetail_2.html).
+-   MindSpore Studio has been installed.
+-   The Atlas 200 DK developer board has been connected to MindSpore Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured. 
 
 ## Software Preparation<a name="en-us_topic_0167438951_section126492814528"></a>
 

@@ -6,8 +6,8 @@
 
 部署此Sample前，需要准备好以下环境：
 
--   已完成MindSpore Studio的安装，详细请参考[MindSpore Studio安装指南](https://www.huawei.com/minisite/ascend/cn/filedetail_1.html)。
--   已完成Atlas 200 DK开发者板与MindSpore Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等，详细请参考[Atlas 200 DK使用指南](https://www.huawei.com/minisite/ascend/cn/filedetail_2.html)。
+-   已完成MindSpore Studio的安装。
+-   已完成Atlas 200 DK开发者板与MindSpore Studio的连接，交叉编译器的安装，SD卡的制作及基本信息的配置等。
 
 ## 软件准备<a name="zh-cn_topic_0167414508_section181111827718"></a>
 
