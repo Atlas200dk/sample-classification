@@ -254,7 +254,7 @@ Before running the application, obtain the source code package and configure the
 
     Example command:
 
-    **python3 run\_classification.py -m  _\~/models/alexnet.om_  -w  _224_  -h  _224_  -i**
+    **python3 run\_classification.py -m  _\~/models/alexnet.om_  -w  _227_  -h  _227_  -i**
 
     **_./example.jpg_  -n  _10_**
 
