@@ -1,3 +1,5 @@
+EN|[CN](README_cn.md)
+
 # Image Classification<a name="EN-US_TOPIC_0167609394"></a>
 
 The classification application runs on the Atlas 200 DK or the AI acceleration cloud server and implements the inference function by using a common classification network, and the first  _n_  inference results are output.
