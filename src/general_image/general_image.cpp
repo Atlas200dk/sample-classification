@@ -43,6 +43,7 @@
 
 #include "hiaiengine/log.h"
 #include "opencv2/opencv.hpp"
+#include "opencv2/imgcodecs/legacy/constants_c.h"
 #include "tool_api.h"
 
 using hiai::Engine;
@@ -63,10 +64,6 @@ const string kImagePathSeparator = ",";
 const string kPathSeparator = "/";
 
 }
-
-// register custom data type
-HIAI_REGISTER_DATA_TYPE("ConsoleParams", ConsoleParams);
-HIAI_REGISTER_DATA_TYPE("EngineTrans", EngineTrans);
 
 HIAI_StatusT GeneralImage::Init(
     const hiai::AIConfig& config,

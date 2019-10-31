@@ -37,17 +37,12 @@ import argparse
 import os
 import sys
 
-MODEL_PATH = '${MODEL_PATH}'
-GRAPH_TEMPLATE_FILE = 'graph.template'
-GRAPH_CONFIG_FILE = 'graph.config'
-
-CPP_EXE = './ascend_classification'
+CPP_EXE = './workspace_mind_studio_new_sample_classification'
 CONCOLE_LIST = ' {} {} {} {}'
 
 
 def get_args():
     """input argument parser function
-        -m --model_path: davinci offline model path.
         -w --model_width: width of input images required by model.
         -h --model_height: height of input images required by model.
         -i --input_path: paths and folders of input images.
@@ -58,10 +53,8 @@ def get_args():
     """
     parser = argparse.ArgumentParser(
         conflict_handler='resolve',
-        description='eg: python3 classfication_demo.py -m test.om \
+        description='eg: python3 classfication_demo.py  \
         -w 224 -h 224 -i test.jpg -n 10')
-    parser.add_argument('-m', '--model_path', required=True,
-                        help='davinci offline model path.')
     parser.add_argument('-w', '--model_width', required=True, type=int,
                         help='model input width. range:[16,4096]')
     parser.add_argument('-h', '--model_height', required=True, type=int,
@@ -85,9 +78,6 @@ def validate_args(args):
     :return: True or False
     """
     check_flag = True
-    if not os.path.isfile(args.model_path):
-        eprint('[ERROR] offline model does not exist.')
-        check_flag = False
     for path in args.input_path:
         if os.path.isdir(path):
             if not os.listdir(path):
@@ -118,26 +108,12 @@ def assemble_console_params(args):
     return console_params
 
 
-def generate_graph(model_path):
-    """generate graph config files base on template.
-    :param model_path: davinci offline model path.
-    """
-    if not os.path.isfile(GRAPH_TEMPLATE_FILE):
-        eprint('[ERROR] graph template file does not exist.')
-        exit()
-    with open(GRAPH_TEMPLATE_FILE, 'r') as template_file:
-        contents = template_file.read()
-        contents = contents.replace(MODEL_PATH, model_path)
-    with open(GRAPH_CONFIG_FILE, 'w') as config_file:
-        config_file.write(contents)
-
 
 def main():
     """main function to receive console params then call cpp program.
     """
     args = get_args()
     if validate_args(args):
-        generate_graph(os.path.realpath(args.model_path))
         if os.path.exists(CPP_EXE):
             console_params = assemble_console_params(args)
             os.system(CPP_EXE + console_params)

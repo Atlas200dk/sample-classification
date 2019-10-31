@@ -42,6 +42,7 @@
 
 #include "hiaiengine/log.h"
 #include "opencv2/opencv.hpp"
+#include "opencv2/imgcodecs/legacy/constants_c.h"
 #include "tool_api.h"
 
 using hiai::Engine;
