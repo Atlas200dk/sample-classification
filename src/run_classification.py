@@ -32,12 +32,12 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 #   =======================================================================
-#
 import argparse
 import os
+import re
 import sys
 
-CPP_EXE = './workspace_mind_studio_new_sample_classification'
+CPP_EXE = None
 CONCOLE_LIST = ' {} {} {} {}'
 
 
@@ -48,7 +48,7 @@ def get_args():
         -i --input_path: paths and folders of input images.
         -n --top_n: topN classfication results.
         eg:
-        python3 classfication_demo.py -m google_net.om \
+        python3 classfication_demo.py \
         -w 224 -h 224 -i ./example.jpg -n 10
     """
     parser = argparse.ArgumentParser(
@@ -99,26 +99,41 @@ def validate_args(args):
 
 
 def assemble_console_params(args):
-    """assemble console params as agreed with cpp program.
-    :return: console params string
-    """
     image_path = ','.join(args.input_path)
     console_params = CONCOLE_LIST.format(args.model_width, args.model_height,
                                          image_path, args.top_n)
     return console_params
 
 
+def Init_CPP_EXE():
+    check_flag = True
+    global CPP_EXE
+    file_dir=os.getcwd()
+    count=0
+    for dirpath, dirname, filename in os.walk(file_dir):
+        if count >= 1:
+            break
+        for i in filename:
+            if re.match("workspace_mind_studio",i):
+                CPP_EXE='./'+i
+                break
+    if not CPP_EXE:
+        eprint('[ERROR] excute file does not exist.')
+        check_flag = False
+    return check_flag
+	
 
 def main():
     """main function to receive console params then call cpp program.
     """
     args = get_args()
     if validate_args(args):
-        if os.path.exists(CPP_EXE):
-            console_params = assemble_console_params(args)
-            os.system(CPP_EXE + console_params)
-        else:
-            eprint('[ERROR] excute file does not exist.')
+        if Init_CPP_EXE():
+            if os.path.exists(CPP_EXE):
+                console_params = assemble_console_params(args)
+                os.system(CPP_EXE + console_params)
+            else:
+                eprint('[ERROR] excute file does not exist.')
 
 
 if __name__ == '__main__':
