@@ -233,7 +233,7 @@
 
             ![](figures/zh-cn_image_0208264607.png)
 
-        -   googlenet、inception\_v2模型转换时中，由于通用分类网络应用一次处理一张图片，所以转换时需要将Nodes配置中的**N**修改为1，AIPP配置中的**Input Image Size\[W\]\[H\]**需要分别修改为256、224，此处需要128\*16对齐，**Model Image Format**  选择BGR888\_U8。
+        -   googlenet、inception\_v2、resent18模型转换时中，由于通用分类网络应用一次处理一张图片，所以转换时需要将Nodes配置中的**N**修改为1，AIPP配置中的**Input Image Size\[W\]\[H\]**需要分别修改为256、224，此处需要128\*16对齐，**Model Image Format**  选择BGR888\_U8。
 
             **图 2**  Nodes配置示例<a name="zh-cn_topic_0203223265_fig95695336322"></a>  
             ![](figures/Nodes配置示例.png "Nodes配置示例")
@@ -328,7 +328,7 @@
 
 3.  进入通用分类网络应用的可执行文件所在路径。
 
-    **cd \~/HIAI\_PROJECTS/ascend\_workspace/classification/out**
+    **cd \~/HIAI\_PROJECTS/workspace\_mind\_studio/classification/out**
 
 4.  执行应用程序。
 
