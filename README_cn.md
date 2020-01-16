@@ -177,7 +177,7 @@
     1.  在Mind Studio操作界面的顶部菜单栏中选择“Tool \> Convert Model”，进入模型转换界面。
     2.  在弹出的**Convert Model**操作界面中，Model File与Weight File分别选择[2](#zh-cn_topic_0182554620_li29641938112018)中下载的模型文件和权重文件。
         -   **Model Name**填写为[表1](#zh-cn_topic_0182554620_table1119094515272)中对应的**模型名称**。
-        -   googlenet、inception\_v2模型中，通用分类网络应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1
+        -   alexnet、googlenet、inception\_v2模型中，通用分类网络应用一次处理一张图片，所以转换时需要将Input Shape的N修改为1
 
             **图 1**  Input Shape配置示例<a name="zh-cn_topic_0182554620_fig95695336322"></a>  
             ![](doc/source/img/Input-Shape配置示例.png "Input-Shape配置示例")
@@ -185,7 +185,7 @@
 
     3.  单击OK开始转换模型。
 
-        模型转换成功后，后缀为.om的Davinci模型存放地址为$HOME/tools/che/model-zoo/my-model/xxx。
+        模型转换成功后，后缀为.om的Davinci模型存放地址为:$HOME/tools/che/model-zoo/my-model/xxx。
 
 4.  以Mind Studio安装用户登录Mind Studio所在Ubuntu服务器，并设置环境变量DDK\_HOME。
 
