@@ -17,7 +17,7 @@ Before running the application, obtain the source code package and configure the
 
 1.  Obtain the source code package.
 
-    Download all the code in the sample-classification repository at  [https://gitee.com/Atlas200DK/sample-classification](https://gitee.com/Atlas200DK/sample-classification)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  _/home/ascend/sample-classification_.
+    Download all the code in the sample-classification repository at  [https://gitee.com/Atlas200DK/sample-classification](https://gitee.com/Atlas200DK/sample-classification)  to any directory on Ubuntu Server where  Mind Studio  is located as the  Mind Studio  installation user, for example,  $HOME/sample-classification.
 
 2.  <a name="en-us_topic_0182554620_li29641938112018"></a>Obtain the source network model required by the application.
 
@@ -193,12 +193,11 @@ Before running the application, obtain the source code package and configure the
 
     Run the following commands to add the environment variables  **DDK\_HOME**  and  **LD\_LIBRARY\_PATH**  to the last line:
 
-    **export DDK\_HOME=/home/XXX/tools/che/ddk/ddk**
+    **export DDK\_HOME=$HOME/tools/che/ddk/ddk**
 
     **export LD\_LIBRARY\_PATH=$DDK\_HOME/uihost/lib**
 
     >![](doc/source/img/icon-note.gif) **NOTE:**   
-    >-   **XXX**  indicates the  Mind Studio  installation user, and  **/home/XXX/tools**  indicates the default installation path of the DDK.  
     >-   If the environment variables have been added, skip this step.  
 
     Enter  **:wq!**  to save and exit.
@@ -210,7 +209,7 @@ Before running the application, obtain the source code package and configure the
 
 ## Deployment<a name="en-us_topic_0182554620_section18931344873"></a>
 
-1.  Access the root directory where the classification application code is located as the  Mind Studio  installation user, for example,  _**/home/ascend/sample-classification**_.
+1.  Access the root directory where the classification application code is located as the  Mind Studio  installation user, for example,  **$HOME/sample-classification**.
 2.  Run the deployment script to prepare the project environment, including compiling and deploying the ascenddk public library and application.
 
     **bash deploy.sh  _host\_ip_** _model_mode_
