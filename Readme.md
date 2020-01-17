@@ -15,11 +15,11 @@
 
 1.  <a name="zh-cn_topic_0203223265_li953280133816"></a>获取源码包。
 
-    将[https://gitee.com/Atlas200DK/sample-classification/tree/1.3x.0.0/](https://gitee.com/Atlas200DK/sample-classification/tree/1.3x.0.0/)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如代码存放路径为：_$HOME/AscendProjects/sample-classification_。
+    将[https://gitee.com/Atlas200DK/sample-classification/tree/1.3x.0.0/](https://gitee.com/Atlas200DK/sample-classification/tree/1.3x.0.0/)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如代码存放路径为：$HOME/AscendProjects/sample-classification。
 
 2.  <a name="zh-cn_topic_0203223265_li29641938112018"></a>获取此应用中所需要的原始网络模型。
 
-    参考[表1](#zh-cn_topic_0203223265_table1119094515272)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如：_$HOME/models/classification_。
+    参考[表1](#zh-cn_topic_0203223265_table1119094515272)获取此应用中所用到的原始网络模型及其对应的权重文件，并将其存放到Mind Studio所在Ubuntu服务器的任意目录，这两个文件必须存放到同一个目录下。例如：$HOME/models/classification。
 
     **表 1**  通用分类网络应用使用模型
 
@@ -205,7 +205,7 @@
 
         **export tools\_version=_1.31.X.X_**
 
-        **export DDK\_HOME=$HOME/.mindstudio/huawei/ddk/_1.31.X.X_/ddk**
+        **export DDK\_HOME=\\$HOME/.mindstudio/huawei/ddk/\\$tools\_version/ddk**
 
         **export NPU\_DEVICE\_LIB=$DDK\_HOME/../RC/host-aarch64\_Ubuntu16.04.3/lib**
 
@@ -243,11 +243,11 @@
 
     3.  单击OK开始转换模型。
 
-        模型转换成功后，后缀为.om的离线模型存放地址为_$HOME/modelzoo/XXX__/device_。
+        模型转换成功后，后缀为.om的离线模型存放地址为：$HOME/modelzoo/XXX/device。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   Mindstudio模型转换中每一步的具体意义和参数说明可以参考[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
-    >-   XXX表示当前转换的模型名称，如googlenet.om存放地址为$HOME/modelzoo/googlenet/device。  
+    >-   XXX表示当前转换的模型名称，如googlenet.om存放地址为：$HOME/modelzoo/googlenet/device。  
 
 5.  <a name="zh-cn_topic_0203223265_li470213205618"></a>将转换好的模型文件（.om文件）上传到[步骤1](#zh-cn_topic_0203223265_li953280133816)中源码所在路径下的“**sample-classification/script**”目录下。
 
@@ -255,7 +255,7 @@
 
 1.  打开对应的工程。
 
-    以Mind Studio安装用户在命令行进入安装包解压后的“MindStudio-ubuntu/bin”目录，如$HOME/MindStudio-ubuntu/bin。执行如下命令启动Mind Studio。
+    以Mind Studio安装用户在命令行进入安装包解压后的“MindStudio-ubuntu/bin”目录，如：$HOME/MindStudio-ubuntu/bin。执行如下命令启动Mind Studio。
 
     **./MindStudio.sh**
 
