@@ -41,7 +41,7 @@ if(type STREQUAL host)
         add_compile_options(-DIS_RC)
     endif()
 
-    link_directories($ENV{NPU_HOST_LIB} $ENV{HOME}/ascend_ddk/host/lib $ENV{HOME}/ascend_ddk/device/lib /home/HwHiAiUser/HIAI_PROJECTS/ascend_lib $ENV{NPU_DEVICE_LIB})
+    link_directories($ENV{NPU_HOST_LIB} $ENV{HOME}/ascend_ddk/host/lib $ENV{HOME}/ascend_ddk/device/lib /home/HwHiAiUser/HIAI_PROJECTS/ascend_lib)
     set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
     add_executable(main Main.cpp)
@@ -50,7 +50,7 @@ if(type STREQUAL host)
 
     if(target STREQUAL "RC")
         target_link_libraries(main matrixdaemon mmpa pthread dl rt)
-        target_link_libraries(Host matrixdaemon hiai_common media_mini ascend_ezdvpp Dvpp_api Dvpp_jpeg_decoder Dvpp_jpeg_encoder Dvpp_vpc ascend_ezdvpp opencv_world)
+        target_link_libraries(Host matrixdaemon hiai_common media_mini opencv_world)
     else()
         target_link_libraries(main matrix mmpa pthread dl rt)
         target_link_libraries(Host matrix hiai_common)
@@ -61,7 +61,7 @@ if(type STREQUAL host)
 else()
     add_compile_options(-DCPU_ONLY)
 
-    link_directories($ENV{NPU_HOST_LIB} $ENV{HOME}/ascend_ddk/host/lib $ENV{HOME}/ascend_ddk/device/lib /home/HwHiAiUser/HIAI_PROJECTS/ascend_lib $ENV{NPU_DEVICE_LIB})
+    link_directories($ENV{NPU_DEV_LIB} $ENV{HOME}/ascend_ddk/host/lib $ENV{HOME}/ascend_ddk/device/lib /home/HwHiAiUser/HIAI_PROJECTS/ascend_lib)
 
     add_library(Device SHARED general_inference/general_inference.cpp)
 
