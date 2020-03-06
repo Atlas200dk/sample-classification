@@ -244,7 +244,7 @@ Before running the application, obtain the source code package and configure the
               **Figure 2**  Nodes configuration example<a name="zh-cn_topic_0203223265_fig95695336322"></a>  
              ![](figures/Nodes配置示例.png "Nodes configuration example")
 
-             **图 3**  AIPP configuration example<a name="zh-cn_topic_0203223265_fig14632122193310"></a>  
+             **Figure 3**  AIPP configuration example<a name="zh-cn_topic_0203223265_fig14632122193310"></a>  
              ![](figures/AIPP配置示例.png "AIPP configuration example")
 
    3.   Click **OK** to start model conversion.
