@@ -1,3 +1,5 @@
+中文|[英文](Readme_en.md)
+
 # 分类网络应用（C++）<a name="ZH-CN_TOPIC_0208837235"></a>
 
 本Application支持运行在Atlas 200 DK或者AI加速云服务器上，实现了对常见的分类网络的推理功能并输出前n个推理结果。
