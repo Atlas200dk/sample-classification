@@ -173,14 +173,14 @@ Before running the application, obtain the source code package and configure the
     </tbody>
     </table>
 
-3.  Log in to Ubuntu Server where Mind Studio is located as the Mind Studio installation user, confirm current DDK version and set the  environment variable  **DDK\_HOME**, **tools\_version**, **NPU\_DEVICE\_LIB** and **LD\_LIBRARY\_PATH**.
+3.  Log in to Ubuntu Server where **Mind Studio** is located as the **Mind Studio** installation user, confirm current DDK version and set the  environment variable  **DDK\_HOME**, **tools\_version**, **NPU\_DEVICE\_LIB** and **LD\_LIBRARY\_PATH**.
 
     1.  <a name="zh-cn_topic_0203223265_zh-cn_topic_0203223294_li61417158198"></a>Find current DDK version number.
 
 
-        Current DDK version number can be obtained by either Mind studio tool or DDK packages.
+        Current DDK version number can be obtained by either **Mind studio** tool or DDK packages.
 
-        -    Using Mind studio tool.
+        -    Using **Mind studio** tool.
 
              choose **File \> Settings \> System Settings \> Ascend DDK** from the main menu of Mind Studio, DDK version inquiry page will display as [Figure 1](zh-cn_topic_0203223294.md#fig94023140222).
 
@@ -239,7 +239,7 @@ Before running the application, obtain the source code package and configure the
 
              ![](figures/zh-cn_image_0208264607.png)
 
-         -  For **googlenet**、**inception\_v2**、**resent18**, a general classification network application processes one image at a time. Therefore, the value of  **N**  in  **Input Shape**  must be set to  **1**  during conversion, **Input Image Size\[W\]\[H\]** in AIPP configuration needs to be set to 256、224 seperately,  128 \*16 alignment is required here,  for **Model Image Format**, select BGR888\_U8.
+         -  For **googlenet**、**inception\_v2**、**resent18**, a general classification network application processes one image at a time. Therefore, the value of  **N**  in  **Input Shape**  must be set to  **1**  during conversion, **Input Image Size\[W\]\[H\]** in AIPP configuration needs to be set to 256、224 respectively,  128 \*16 alignment is required here,  for **Model Image Format**, select BGR888\_U8.
 
               **Figure 2**  Nodes configuration example<a name="zh-cn_topic_0203223265_fig95695336322"></a>  
              ![](figures/Nodes配置示例.png "Nodes configuration example")
@@ -254,7 +254,7 @@ Before running the application, obtain the source code package and configure the
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
     >-   The specific meaning and parameter description in each step of **Mind Studio** model conversion can refer to[https://ascend.huawei.com/doc/mindstudio/2.1.0\(beta\)/zh/zh-cn\_topic\_0188462651.html](https://ascend.huawei.com/doc/mindstudio/2.1.0(beta)/zh/zh-cn_topic_0188462651.html)  
     >-  XXX indicates the name of currently converted model, for example, googlenet.om is saved in: **$HOME/modelzoo/googlenet/device**.  
-5.  <a name="zh-cn_topic_0203223265_li470213205618"></a>upload converted model file(.om file) to “**sample-classification/script**” directory  in the source code path in [Step 1](#zh-cn_topic_0203223265_li953280133816).
+5.  <a name="zh-cn_topic_0203223265_li470213205618"></a>upload the converted model file(.om file) to “**sample-classification/script**” directory  in the source code path in [Step 1](#zh-cn_topic_0203223265_li953280133816).
 
 ## Compile<a name="zh-cn_topic_0203223265_section18931344873"></a>
 
