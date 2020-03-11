@@ -11,7 +11,7 @@ Before using an open source application, ensure that:
 -   Mind Studio  has been installed.
 -   The Atlas 200 DK developer board has been connected to  Mind Studio, the cross compiler has been installed, the SD card has been prepared, and basic information has been configured.。
 ## Deployment
-1. Deployment: choose either faster-deployment or conventional deployment as shown below: 
+1. Deployment: choose either faster deployment or conventional deployment as shown below: 
 
    1.1 Faster deployment, refer to https://gitee.com/Atlas200DK/faster-deploy .
     >![](public_sys-resources/icon-note.gif) **NOTE：**   
