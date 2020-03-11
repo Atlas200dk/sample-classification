@@ -64,7 +64,7 @@ Before using an open source application, ensure that:
     >-   Note that the "" symbol is no need to be used when filling in parameters.
     >-   Only one single model name can be filled in the configuration file, the filled model must be one of the models saved in  [Step 5](#zh-cn_topic_0203223265_li470213205618). **googlenet** is used as an example here, it can be replaced by other models listed in this application. 
 
-3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419").
+3.  Run the deployment script to adjust the configuration parameters, download and compile 3rd party libraries. Open the Terminal of **Mind Studio** tool, which is under the main code directory, run the following command to execute environment deployment in the backstage, as shown in [Figure 3](#zh-cn_topic_0182554577_fig19292258105419).
     
     **Figure 3**  Execute deployment script<a name="zh-cn_topic_0182554577_fig19292258105419"></a>  
     
