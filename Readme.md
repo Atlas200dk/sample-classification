@@ -1,4 +1,4 @@
-中文|[英文](Readme_en.md)
+CN|[EN](Readme_en.md)
 
 # 分类网络应用（C++）<a name="ZH-CN_TOPIC_0208837235"></a>
 
