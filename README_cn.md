@@ -17,7 +17,7 @@
 
 1.  获取源码包。
 
-    将[https://github.com/Atlas200DKTest/sample-classification](https://github.com/Atlas200DKTest/sample-classification)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-classification。
+    将[https://github.com/Atlas200dk/sample-classification](https://github.com/Atlas200dk/sample-classification)仓中的代码以Mind Studio安装用户下载至Mind Studio所在Ubuntu服务器的任意目录，例如代码存放路径为：$HOME/sample-classification。
 
 2.  <a name="zh-cn_topic_0182554620_li29641938112018"></a>获取此应用中所需要的原始网络模型。
 
@@ -39,7 +39,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p116141194720"><a name="zh-cn_topic_0182554620_p116141194720"></a><a name="zh-cn_topic_0182554620_p116141194720"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p86191184712"><a name="zh-cn_topic_0182554620_p86191184712"></a><a name="zh-cn_topic_0182554620_p86191184712"></a>是基于Caffe的AlexNet模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p67311330479"><a name="zh-cn_topic_0182554620_p67311330479"></a><a name="zh-cn_topic_0182554620_p67311330479"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/alexnet" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/alexnet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p67311330479"><a name="zh-cn_topic_0182554620_p67311330479"></a><a name="zh-cn_topic_0182554620_p67311330479"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/alexnet" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/alexnet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row2399521134819"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p3400192113488"><a name="zh-cn_topic_0182554620_p3400192113488"></a><a name="zh-cn_topic_0182554620_p3400192113488"></a>caffenet</p>
@@ -47,7 +47,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p5645133234810"><a name="zh-cn_topic_0182554620_p5645133234810"></a><a name="zh-cn_topic_0182554620_p5645133234810"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p14645153244816"><a name="zh-cn_topic_0182554620_p14645153244816"></a><a name="zh-cn_topic_0182554620_p14645153244816"></a>是基于Caffe的CaffeNet模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1537844912482"><a name="zh-cn_topic_0182554620_p1537844912482"></a><a name="zh-cn_topic_0182554620_p1537844912482"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/caffenet" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/caffenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1537844912482"><a name="zh-cn_topic_0182554620_p1537844912482"></a><a name="zh-cn_topic_0182554620_p1537844912482"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/caffenet" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/caffenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row3773114518271"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p17738455277"><a name="zh-cn_topic_0182554620_p17738455277"></a><a name="zh-cn_topic_0182554620_p17738455277"></a>densenet</p>
@@ -55,7 +55,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p16773124511270"><a name="zh-cn_topic_0182554620_p16773124511270"></a><a name="zh-cn_topic_0182554620_p16773124511270"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p2773745162718"><a name="zh-cn_topic_0182554620_p2773745162718"></a><a name="zh-cn_topic_0182554620_p2773745162718"></a>是基于Caffe的DenseNet121模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p187731945132715"><a name="zh-cn_topic_0182554620_p187731945132715"></a><a name="zh-cn_topic_0182554620_p187731945132715"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/densenet" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/densenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p187731945132715"><a name="zh-cn_topic_0182554620_p187731945132715"></a><a name="zh-cn_topic_0182554620_p187731945132715"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/densenet" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/densenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row137731845122710"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p477316457275"><a name="zh-cn_topic_0182554620_p477316457275"></a><a name="zh-cn_topic_0182554620_p477316457275"></a>googlenet</p>
@@ -63,7 +63,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p197731456270"><a name="zh-cn_topic_0182554620_p197731456270"></a><a name="zh-cn_topic_0182554620_p197731456270"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p1877394515274"><a name="zh-cn_topic_0182554620_p1877394515274"></a><a name="zh-cn_topic_0182554620_p1877394515274"></a>是基于Caffe的GoogLeNet模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p197738453275"><a name="zh-cn_topic_0182554620_p197738453275"></a><a name="zh-cn_topic_0182554620_p197738453275"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/googlenet" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/googlenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p197738453275"><a name="zh-cn_topic_0182554620_p197738453275"></a><a name="zh-cn_topic_0182554620_p197738453275"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/googlenet" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/googlenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row977374512716"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p1977324512272"><a name="zh-cn_topic_0182554620_p1977324512272"></a><a name="zh-cn_topic_0182554620_p1977324512272"></a><span>inception_v2</span></p>
@@ -71,7 +71,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p14773445122712"><a name="zh-cn_topic_0182554620_p14773445122712"></a><a name="zh-cn_topic_0182554620_p14773445122712"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p877311459270"><a name="zh-cn_topic_0182554620_p877311459270"></a><a name="zh-cn_topic_0182554620_p877311459270"></a>是基于Caffe的Inception V2模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p16773145162719"><a name="zh-cn_topic_0182554620_p16773145162719"></a><a name="zh-cn_topic_0182554620_p16773145162719"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/inception_v2" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/inception_v2</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p16773145162719"><a name="zh-cn_topic_0182554620_p16773145162719"></a><a name="zh-cn_topic_0182554620_p16773145162719"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/inception_v2" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/inception_v2</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row429165985115"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p1050712711523"><a name="zh-cn_topic_0182554620_p1050712711523"></a><a name="zh-cn_topic_0182554620_p1050712711523"></a><span>inception_v3</span></p>
@@ -79,7 +79,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p18641141115218"><a name="zh-cn_topic_0182554620_p18641141115218"></a><a name="zh-cn_topic_0182554620_p18641141115218"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p06411511105213"><a name="zh-cn_topic_0182554620_p06411511105213"></a><a name="zh-cn_topic_0182554620_p06411511105213"></a>是基于Caffe的Inception V3模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1241971612520"><a name="zh-cn_topic_0182554620_p1241971612520"></a><a name="zh-cn_topic_0182554620_p1241971612520"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/inception_v3" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/inception_v3</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1241971612520"><a name="zh-cn_topic_0182554620_p1241971612520"></a><a name="zh-cn_topic_0182554620_p1241971612520"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/inception_v3" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/inception_v3</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row6482142185210"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p12508168115214"><a name="zh-cn_topic_0182554620_p12508168115214"></a><a name="zh-cn_topic_0182554620_p12508168115214"></a><span>inception_v4</span></p>
@@ -87,7 +87,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p8785612105217"><a name="zh-cn_topic_0182554620_p8785612105217"></a><a name="zh-cn_topic_0182554620_p8785612105217"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p47851512105212"><a name="zh-cn_topic_0182554620_p47851512105212"></a><a name="zh-cn_topic_0182554620_p47851512105212"></a>是基于Caffe的Inception V4模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1028761705212"><a name="zh-cn_topic_0182554620_p1028761705212"></a><a name="zh-cn_topic_0182554620_p1028761705212"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/inception_v4" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/inception_v4</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1028761705212"><a name="zh-cn_topic_0182554620_p1028761705212"></a><a name="zh-cn_topic_0182554620_p1028761705212"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/inception_v4" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/inception_v4</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row77732045152717"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p0773114572715"><a name="zh-cn_topic_0182554620_p0773114572715"></a><a name="zh-cn_topic_0182554620_p0773114572715"></a><span>mobilenet_v1</span></p>
@@ -95,7 +95,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p11774645162715"><a name="zh-cn_topic_0182554620_p11774645162715"></a><a name="zh-cn_topic_0182554620_p11774645162715"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p47741455273"><a name="zh-cn_topic_0182554620_p47741455273"></a><a name="zh-cn_topic_0182554620_p47741455273"></a>是基于Caffe的MobileNet V1模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p167741745182714"><a name="zh-cn_topic_0182554620_p167741745182714"></a><a name="zh-cn_topic_0182554620_p167741745182714"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/mobilenet_v1" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/mobilenet_v1</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p167741745182714"><a name="zh-cn_topic_0182554620_p167741745182714"></a><a name="zh-cn_topic_0182554620_p167741745182714"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/mobilenet_v1" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/mobilenet_v1</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row12774164515277"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p187741345112718"><a name="zh-cn_topic_0182554620_p187741345112718"></a><a name="zh-cn_topic_0182554620_p187741345112718"></a><span>mobilenet_v2</span></p>
@@ -103,7 +103,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p277414519274"><a name="zh-cn_topic_0182554620_p277414519274"></a><a name="zh-cn_topic_0182554620_p277414519274"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p8774174502713"><a name="zh-cn_topic_0182554620_p8774174502713"></a><a name="zh-cn_topic_0182554620_p8774174502713"></a>是基于Caffe的MobileNet V2模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1677414514274"><a name="zh-cn_topic_0182554620_p1677414514274"></a><a name="zh-cn_topic_0182554620_p1677414514274"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/mobilenet_v2" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/mobilenet_v2</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p1677414514274"><a name="zh-cn_topic_0182554620_p1677414514274"></a><a name="zh-cn_topic_0182554620_p1677414514274"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/mobilenet_v2" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/mobilenet_v2</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row1577434516271"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p3774194512713"><a name="zh-cn_topic_0182554620_p3774194512713"></a><a name="zh-cn_topic_0182554620_p3774194512713"></a><span>resnet18</span></p>
@@ -111,7 +111,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p7774245122713"><a name="zh-cn_topic_0182554620_p7774245122713"></a><a name="zh-cn_topic_0182554620_p7774245122713"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p577494517271"><a name="zh-cn_topic_0182554620_p577494517271"></a><a name="zh-cn_topic_0182554620_p577494517271"></a>是基于Caffe的ResNet 18模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p16774144510270"><a name="zh-cn_topic_0182554620_p16774144510270"></a><a name="zh-cn_topic_0182554620_p16774144510270"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet18" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet18</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p16774144510270"><a name="zh-cn_topic_0182554620_p16774144510270"></a><a name="zh-cn_topic_0182554620_p16774144510270"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet18" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet18</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row377414452276"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p10774545142714"><a name="zh-cn_topic_0182554620_p10774545142714"></a><a name="zh-cn_topic_0182554620_p10774545142714"></a><span>resnet50</span></p>
@@ -119,7 +119,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p97741245142712"><a name="zh-cn_topic_0182554620_p97741245142712"></a><a name="zh-cn_topic_0182554620_p97741245142712"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p177412456271"><a name="zh-cn_topic_0182554620_p177412456271"></a><a name="zh-cn_topic_0182554620_p177412456271"></a>是基于Caffe的ResNet 50模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p57747459272"><a name="zh-cn_topic_0182554620_p57747459272"></a><a name="zh-cn_topic_0182554620_p57747459272"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet50" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet50</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p57747459272"><a name="zh-cn_topic_0182554620_p57747459272"></a><a name="zh-cn_topic_0182554620_p57747459272"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet50" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet50</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row377484514279"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p1777454516275"><a name="zh-cn_topic_0182554620_p1777454516275"></a><a name="zh-cn_topic_0182554620_p1777454516275"></a><span>resnet101</span></p>
@@ -127,7 +127,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p15774124516274"><a name="zh-cn_topic_0182554620_p15774124516274"></a><a name="zh-cn_topic_0182554620_p15774124516274"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p7774134552720"><a name="zh-cn_topic_0182554620_p7774134552720"></a><a name="zh-cn_topic_0182554620_p7774134552720"></a>是基于Caffe的ResNet 101模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p117741545132710"><a name="zh-cn_topic_0182554620_p117741545132710"></a><a name="zh-cn_topic_0182554620_p117741545132710"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet101" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet101</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p117741545132710"><a name="zh-cn_topic_0182554620_p117741545132710"></a><a name="zh-cn_topic_0182554620_p117741545132710"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet101" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet101</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row14774154513279"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p1077413452272"><a name="zh-cn_topic_0182554620_p1077413452272"></a><a name="zh-cn_topic_0182554620_p1077413452272"></a><span>resnet15</span>2</p>
@@ -135,7 +135,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p177434517275"><a name="zh-cn_topic_0182554620_p177434517275"></a><a name="zh-cn_topic_0182554620_p177434517275"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p877515459276"><a name="zh-cn_topic_0182554620_p877515459276"></a><a name="zh-cn_topic_0182554620_p877515459276"></a>是基于Caffe的ResNet 152模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p777514582712"><a name="zh-cn_topic_0182554620_p777514582712"></a><a name="zh-cn_topic_0182554620_p777514582712"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet152" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/resnet152</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p777514582712"><a name="zh-cn_topic_0182554620_p777514582712"></a><a name="zh-cn_topic_0182554620_p777514582712"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet152" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/resnet152</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row37752450270"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p977544513278"><a name="zh-cn_topic_0182554620_p977544513278"></a><a name="zh-cn_topic_0182554620_p977544513278"></a><span>vgg16</span></p>
@@ -143,7 +143,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p1177514522713"><a name="zh-cn_topic_0182554620_p1177514522713"></a><a name="zh-cn_topic_0182554620_p1177514522713"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p10775194582713"><a name="zh-cn_topic_0182554620_p10775194582713"></a><a name="zh-cn_topic_0182554620_p10775194582713"></a>是基于Caffe的VGG16模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p18775124582720"><a name="zh-cn_topic_0182554620_p18775124582720"></a><a name="zh-cn_topic_0182554620_p18775124582720"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/vgg16" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/vgg16</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p18775124582720"><a name="zh-cn_topic_0182554620_p18775124582720"></a><a name="zh-cn_topic_0182554620_p18775124582720"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/vgg16" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/vgg16</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row2775194518272"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p5775154516272"><a name="zh-cn_topic_0182554620_p5775154516272"></a><a name="zh-cn_topic_0182554620_p5775154516272"></a><span>vgg19</span></p>
@@ -151,7 +151,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p0775204532711"><a name="zh-cn_topic_0182554620_p0775204532711"></a><a name="zh-cn_topic_0182554620_p0775204532711"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p1477554519275"><a name="zh-cn_topic_0182554620_p1477554519275"></a><a name="zh-cn_topic_0182554620_p1477554519275"></a>是基于Caffe的VGG19模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p777554542713"><a name="zh-cn_topic_0182554620_p777554542713"></a><a name="zh-cn_topic_0182554620_p777554542713"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/vgg19" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/vgg19</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p777554542713"><a name="zh-cn_topic_0182554620_p777554542713"></a><a name="zh-cn_topic_0182554620_p777554542713"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/vgg19" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/vgg19</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row17513194404914"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p7513164419495"><a name="zh-cn_topic_0182554620_p7513164419495"></a><a name="zh-cn_topic_0182554620_p7513164419495"></a>squeezenet</p>
@@ -159,7 +159,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p1315111145015"><a name="zh-cn_topic_0182554620_p1315111145015"></a><a name="zh-cn_topic_0182554620_p1315111145015"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p1515131114501"><a name="zh-cn_topic_0182554620_p1515131114501"></a><a name="zh-cn_topic_0182554620_p1515131114501"></a>是基于Caffe的SqueezeNet模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p16265437125015"><a name="zh-cn_topic_0182554620_p16265437125015"></a><a name="zh-cn_topic_0182554620_p16265437125015"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/squeezenet" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/squeezenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p16265437125015"><a name="zh-cn_topic_0182554620_p16265437125015"></a><a name="zh-cn_topic_0182554620_p16265437125015"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/squeezenet" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/squeezenet</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0182554620_row17757454270"><td class="cellrowborder" valign="top" width="12.85%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0182554620_p17759452279"><a name="zh-cn_topic_0182554620_p17759452279"></a><a name="zh-cn_topic_0182554620_p17759452279"></a><span>dpn98</span></p>
@@ -167,7 +167,7 @@
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p4775545162716"><a name="zh-cn_topic_0182554620_p4775545162716"></a><a name="zh-cn_topic_0182554620_p4775545162716"></a>图片分类推理模型。</p>
     <p id="zh-cn_topic_0182554620_p1577504516278"><a name="zh-cn_topic_0182554620_p1577504516278"></a><a name="zh-cn_topic_0182554620_p1577504516278"></a>是基于Caffe的<span>dpn98</span>模型。</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p19776154592711"><a name="zh-cn_topic_0182554620_p19776154592711"></a><a name="zh-cn_topic_0182554620_p19776154592711"></a>请参考<a href="https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/dpn98" target="_blank" rel="noopener noreferrer">https://github.com/HuaweiAscendTest/models/tree/master/computer_vision/classification/dpn98</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
+    <td class="cellrowborder" valign="top" width="74.58%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p19776154592711"><a name="zh-cn_topic_0182554620_p19776154592711"></a><a name="zh-cn_topic_0182554620_p19776154592711"></a>请参考<a href="https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/dpn98" target="_blank" rel="noopener noreferrer">https://github.com/Ascend-Huawei/models/tree/master/computer_vision/classification/dpn98</a>目录中README.md下载原始网络模型文件及其对应的权重文件。</p>
     </td>
     </tr>
     </tbody>
@@ -287,7 +287,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0182554620_p1360434113620"><a name="zh-cn_topic_0182554620_p1360434113620"></a><a name="zh-cn_topic_0182554620_p1360434113620"></a>对DVPP接口进行了封装，提供对图片/视频的处理能力。</p>
 </td>
-<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p63606348367"><a name="zh-cn_topic_0182554620_p63606348367"></a><a name="zh-cn_topic_0182554620_p63606348367"></a><a href="https://github.com/Atlas200DKTest/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200DKTest/sdk-ezdvpp</a></p>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0182554620_p63606348367"><a name="zh-cn_topic_0182554620_p63606348367"></a><a name="zh-cn_topic_0182554620_p63606348367"></a><a href="https://github.com/Atlas200dk/sdk-ezdvpp" target="_blank" rel="noopener noreferrer">https://github.com/Atlas200dk/sdk-ezdvpp</a></p>
 <p id="zh-cn_topic_0182554620_p5360133420366"><a name="zh-cn_topic_0182554620_p5360133420366"></a><a name="zh-cn_topic_0182554620_p5360133420366"></a>下载后请保持文件夹名称为ezdvpp。</p>
 </td>
 </tr>
