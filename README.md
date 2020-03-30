@@ -260,8 +260,8 @@ Before running the application, obtain the source code package and configure the
     **_./example.jpg_  -n  _10_**
 
     -   **-m/--model\_path**: path for storing offline models
-    -   **-w/model\_width**: width of the input image of a model. The value is an integer ranging from 16px to 4096px. Obtain the input width and height required by each model by referring to the readme file of each model file on github. For details, see  [Table 1](#en-us_topic_0182554620_table1119094515272).
-    -   **-h/model\_height**: height of the input image of a model. The value is an integer ranging from 16px to 4096px. Obtain the input width and height required by each model by referring to the readme file of each model file on github. For details, see  [Table 1](#en-us_topic_0182554620_table1119094515272).
+    -   **-w/model\_width**: width of the input image of a model. The value is an integer ranging from 16px to 4096px. Obtain the input width and height required by each model by referring to the readme file of each model file on gitee. For details, see  [Table 1](#en-us_topic_0182554620_table1119094515272).
+    -   **-h/model\_height**: height of the input image of a model. The value is an integer ranging from 16px to 4096px. Obtain the input width and height required by each model by referring to the readme file of each model file on gitee. For details, see  [Table 1](#en-us_topic_0182554620_table1119094515272).
     -   **-i/input\_path**: path of the input image. It can be a directory, indicating that all images in the current directory are used as input (Multiple inputs can be specified).
     -   **-n/top\_n**: the first  _n_  inference results that are output
 
