@@ -241,7 +241,7 @@ function parse_presenter_altasdk_ip()
                 echo "Invlid ip, please choose again..."
                 presenter_atlasdk_ip=""
             else
-                #使用grep检测字段，如果没有找到相应的字段，使用$?会返回�零值
+                #使用grep检测字段，如果没有找到相应的字段，使用$?会返回非零值
                 ret=`/sbin/ifconfig | grep ${presenter_atlasdk_ip}`
                 if [[ $? -ne 0 ]];then
                     presenter_atlasdk_ip=""
