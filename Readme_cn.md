@@ -120,8 +120,8 @@
 
     **python3 run\_classification.py -w  _227_   -h  _227_   -i** **_./example.jpg_  -n  _10_**
 
-    -   -w/model\_width：模型的输入图片宽度，为16\~4096之间的整数，样例模型默认为227。
-    -   -h/model\_height：模型的输入图片高度，为16\~4096之间的整数，样例模型默认为227。
+    -   -w/model\_width：模型的输入图片宽度，为16\~4096之间的整数，此处为样例模型alexnet.om要求输入数据的宽：227，如果使用其它模型，请参考https://bbs.huaweicloud.com/forum/thread-54058-1-1.html ，获取模型要求的输入数据的宽。
+    -   -h/model\_height：模型的输入图片高度，为16\~4096之间的整数，此处为样例模型alexnet.om要求输入数据的高：227，如果使用其它模型，请参考https://bbs.huaweicloud.com/forum/thread-54058-1-1.html ，获取模型要求的输入数据的高。
     -   -i/input\_path：输入图片的路径，可以是目录，表示当前目录下的所有图片都作为输入（可以指定多个输入）。
     -   -n/top\_n：输出前n个推理结果。
 

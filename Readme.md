@@ -119,8 +119,8 @@ You can use either of the following methods:
 
     **python3 run\_classification.py -w  _227_   -h  _227_   -i** **_./example.jpg_  -n  _10_**
 
-    -   **-w/model\_width**: width of the input image of a model. The value is an integer ranging from 16 to 4096.
-    -   **-h/model\_height**: height of the input image of a model. The value is an integer ranging from 16 to 4096.
+    -   **-w/model\_width**: width of the input image of a model. The value is an integer ranging from 16 to 4096.Here is the width of the input data required for the sample model alexnet.om: 227. If you use other models, please refer to https://bbs.huaweicloud.com/forum/thread-54058-1-1.html Input data width
+    -   **-h/model\_height**: height of the input image of a model. The value is an integer ranging from 16 to 4096.Here is the sample model alexnet.om requires high input data: 227, if you use other models, please refer to https://bbs.huaweicloud.com/forum/thread-54058-1-1.html Input data high
     -   **-i/input\_path**: path of the input image. It can be a directory, indicating that all images in the current directory are used as input. \(Multiple inputs can be specified\).
     -   **-n/top\_n**: the first  _n_  inference results that are output
 
